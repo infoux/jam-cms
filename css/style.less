@@ -1,5 +1,32 @@
 // out: ./style.css, compress: true, sourceMap: false
-@import "normalize.css";
+//@import "normalize.css";
+
+
+
+
+
+/* +++ 공통 +++ */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,form,fieldset,p,button{margin:0;padding:0}
+body{*word-break:break-all;-ms-word-break:break-all}
+img,fieldset,iframe{border:0 none}
+li{list-style:none}
+input,select,button{vertical-align:middle}
+img{vertical-align:top}
+i,em,address{font-style:normal}
+label,button{cursor:pointer}
+button{margin:0;padding:0}
+a{text-decoration:none}
+a:hover{text-decoration:none}
+button *{position:relative}
+button img{left:-3px;*left:auto}
+html:first-child select{height:20px;padding-right:6px}
+option{padding-right:6px}
+hr{display:none}
+legend{*width:0}
+table{/* border-collapse:collapse;table-layout:fixed; */border-collapse:collapse;border-spacing:0}
+
+
+
 @import "rem.less";
 @import "fontello.css";
 
@@ -450,7 +477,7 @@ article.login {
 }
 
 
-body.sub {
+body.manager {
   background:url("../images/bg-aside.png") repeat-y left top;
 
 
@@ -634,61 +661,69 @@ body.sub {
 
   }
 
-  article.sub {
-    .inline-block;
-    float:left;
-    min-height:800px;
-    width:calc(~"100% -  180px");
-    padding:30px;
-
-    div.stitle {
-      .relative;
-      margin-bottom:40px;
-      h2 {
-        font-size:26px;
-        .mapazero;
-      }
-
-      div.btn-set {
-        .absolute;
-        right:0;
-        top:0;
-
-          a {
-            .inline-block;
-            width: 100%;
-            width:110px;
-            height:35px;
-            font-size:14px;
-            .center;
-            line-height:35px;
-            background: @gray;
-            color: @gray-dark;
-
-            i {
-              margin-right:4px;
-            }
-
-            &.main {
-              background:@blue;
-              color:@white;
-            }
-
-            &.sub {
-              background:@gray-dark;
-              color:@white;
-            }
-          }
-      }
-    }
-
-  }
-
   footer#footer {
     .inline-block;
     width:100%;
     background:@gray-lighter;
     padding:30px 20px;
   }
+
+}
+
+
+body.sub,
+body.manager {
+
+    article.sub {
+      .inline-block;
+      float:left;
+      min-height:800px;
+      width:calc(~"100% -  180px");
+      padding:30px;
+
+      div.stitle {
+        .relative;
+        margin-bottom:40px;
+        h2 {
+          font-size:26px;
+          .mapazero;
+        }
+
+        div.btn-set {
+          .absolute;
+          right:0;
+          top:0;
+
+            a {
+              .inline-block;
+              width: 100%;
+              width:110px;
+              height:35px;
+              font-size:14px;
+              .center;
+              line-height:35px;
+              margin-left:3px;
+              background: @gray;
+              color: @gray-dark;
+
+              i {
+                margin-right:4px;
+              }
+
+              &.main {
+                background:@blue;
+                color:@white;
+              }
+
+              &.sub {
+                background:@gray-dark;
+                color:@white;
+              }
+            }
+        }
+      }
+
+    }
+
 
 }
