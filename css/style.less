@@ -1,7 +1,7 @@
-// out: ./style.css, sourceMap: false
+// out: ./style.css, compress:false, sourceMap: false
 //@import "normalize.css";
-
 /* +++ 공통 +++ */
+
 body,
 button,
 dd,
@@ -104,9 +104,7 @@ table {
   border-spacing: 0;
 }
 @import "rem.less";
-@import "fontello.css";
-
-/* fonts */
+@import "fontello.css"; /* fonts */
 @font-face {
   font-family: 'Nanum Gothic';
   font-style: normal;
@@ -135,7 +133,6 @@ table {
   src: url("../font/NanumGothic-ExtraBold.eot");
   src: url("../font/NanumGothic-ExtraBold.eot?#iefix") format('embedded-opentype'), url("../font/NanumGothic-ExtraBold.woff") format('woff'), url("../font/NanumGothic-ExtraBold.ttf") format('truetype');
 }
-
 /* basic */
 @min-width: 1000px;
 @myfont: "Nanum Gothic";
@@ -143,27 +140,19 @@ table {
 @header-height: 100px;
 @logo: url("@{img-url}/logo.svg") no-repeat center / 100% 100%;
 @white: #fff;
-@black: #000;
-
-/* gray */
+@black: #000; /* gray */
 @gray-darker: lighten(@black, 13.5%); // #222
 @gray-dark: #4a4a4a;
 @gray: #ccc;
 @gray-light: #0a84dc;
-@gray-lighter: #f7f7f7;
-
-/* blue */
+@gray-lighter: #f7f7f7; /* blue */
 @blue-darker: #0f3e62; // #222
 @blue-dark: #1f5176; // #333
 @blue: #0055b5;
 @blue-light: #0a84dc;
-@blue-lighter: #bce1ff;
-
-/* etc color */
+@blue-lighter: #bce1ff; /* etc color */
 @green: #199d54;
-
 /* mixin */
-
 .bold {
   font-weight: 800;
 }
@@ -441,9 +430,7 @@ table {
     height: auto;
   }
 }
-
 /* header */
-
 * {
   .box-sizing;
 }
@@ -452,9 +439,7 @@ a {
   text-decoration: none;
   color: @gray-dark;
 }
-
 /*font*/
-
 html {
   min-width: @min-width;
   font-size: 14px;
@@ -484,9 +469,7 @@ body {
   overflow: visible;
   clip: auto;
 }
-
 /* layout style */
-
 article.login {
   .fixed;
   .full-position;
@@ -525,7 +508,6 @@ article.login {
       }
     }
   }
-
 }
 
 body.manager {
@@ -542,14 +524,12 @@ body.manager {
       width: auto;
       height: 100%;
       .zero;
-
       background: url("../images/logo.png") no-repeat left center / 46px 30px;
 
       small {
         font-size: 24px;
         color: @blue;
         margin-left: 56px;
-
       }
     }
 
@@ -574,7 +554,6 @@ body.manager {
       background: url("../images/btn-logout.png") no-repeat center / 100%;
       color: transparent;
       border: none;
-
     }
   }
 
@@ -630,10 +609,9 @@ body.manager {
             background: @gray-lighter;
             max-height: 0;
             .opacity(0);
-
-            -webkit-transition: all .5s ease;
-            -moz-transition: all .5s ease;
-            transition: all .5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 
             li.depth2 {
               a {
@@ -678,35 +656,31 @@ body.manager {
                         background: @blue-light;
                       }
                     }
-
                   }
                 }
               }
 
-              &:hover ul {
+              &.active ul {
                 max-height: 2000px;
                 .opacity(1);
-                -webkit-transition: all .5s ease;
-                -moz-transition: all .5s ease;
-                transition: all .5s ease;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                transition: all 0.5s ease;
               }
-
             }
           }
 
-          &:hover ul {
+          &.active ul {
             padding: 10px 0;
             max-height: 2000px;
             .opacity(1);
-            -webkit-transition: all .5s ease;
-            -moz-transition: all .5s ease;
-            transition: all .5s ease;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
           }
-
         }
       }
     }
-
   }
 
   footer#footer {
@@ -715,7 +689,6 @@ body.manager {
     background: @gray-lighter;
     padding: 30px 20px;
   }
-
 }
 
 body.manager,
@@ -769,7 +742,40 @@ body.sub {
         }
       }
     }
-
   }
+}
+/* CHS 추가 */
 
+body.manager article.sub div.stitle div.btn-set a,
+body.sub article.sub div.stitle div.btn-set a {
+  width: 90px;
+}
+
+body.manager article.sub div.stitle,
+body.sub article.sub div.stitle {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+hr.hr {
+  display: block;
+  border-width: 1px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+body.manager article.sub,
+body.sub article.sub {
+  display: inline-block;
+  float: left;
+  min-height: 800px;
+  width: calc(100% - 180px);
+  padding: 10px;
+}
+
+article.login fieldset input[type="button"] {
+  background: url("../images/btn-login.png") no-repeat center / 100% 100%;
+  border: none;
+  color: transparent;
+  cursor: pointer;
 }
