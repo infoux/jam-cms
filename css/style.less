@@ -144,7 +144,7 @@ table {
 @gray-darker: lighten(@black, 13.5%); // #222
 @gray-dark: #4a4a4a;
 @gray: #ccc;
-@gray-light: #0a84dc;
+@gray-light: #eee;
 @gray-lighter: #f7f7f7; /* blue */
 @blue-darker: #0f3e62; // #222
 @blue-dark: #1f5176; // #333
@@ -473,7 +473,6 @@ body {
 article.login {
   .fixed;
   .full-position;
-  .flex;
   background: url("../images/login-bg.jpg") no-repeat center / cover;
 
   fieldset {
@@ -483,7 +482,7 @@ article.login {
       .block;
       width: 346px;
       height: 190px;
-      margin: -160px auto 44px;
+      margin: 200px auto 44px;
       background: url("../images/title-login.png") no-repeat center / 100% 100%;
       color: transparent;
       .zero;
@@ -497,7 +496,7 @@ article.login {
       border: 1px solid @gray-light;
       border-left: none;
       border-top: none;
-      margin-bottom: 20px;
+      margin: 0 auto 20px;
 
       &[type="submit"] {
         background: url("../images/btn-login.png") no-repeat center / 100% 100%;
