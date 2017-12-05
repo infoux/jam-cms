@@ -413,6 +413,24 @@ body.manager aside.menu nav ul {
   padding: 0;
   list-style: none;
 }
+body.manager aside.menu nav ul li.depth1 {
+  background: url("../images/plus.gif") repeat-y 7px 0px #ffffff;
+}
+body.manager aside.menu nav ul li.depth1.active {
+  background: url("../images/minus.gif") repeat-y 7px 0px #ffffff;
+}
+body.manager aside.menu nav ul li.depth1:first-child {
+  background: url("../images/plus-first.gif") repeat-y 7px 0px #ffffff;
+}
+body.manager aside.menu nav ul li.depth1:first-child.active {
+  background: url("../images/minus-first.gif") repeat-y 7px 0px #ffffff;
+}
+body.manager aside.menu nav ul li.depth1:last-child {
+  background: url("../images/plus-last.gif") repeat-y 7px 0px #ffffff;
+}
+body.manager aside.menu nav ul li.depth1:last-child.active {
+  background: url("../images/minus-last.gif") repeat-y 7px 0px #ffffff;
+}
 body.manager aside.menu nav ul li.depth1 h2 {
   margin: 0;
   padding: 0;
@@ -420,52 +438,51 @@ body.manager aside.menu nav ul li.depth1 h2 {
 body.manager aside.menu nav ul li.depth1 h2 a {
   display: block;
   position: relative;
-  height: 40px;
-  line-height: 40px;
+  height: 36px;
+  line-height: 36px;
   font-size: 18px;
-  padding: 0 20px;
+  padding: 0 26px;
   font-weight: 400;
-  border-right: #ccc;
 }
 body.manager aside.menu nav ul li.depth1 h2 a.active,
 body.manager aside.menu nav ul li.depth1 h2 a:hover {
-  background: #0a84dc;
-  color: #fff;
-  margin-right: -1px;
-}
-body.manager aside.menu nav ul li.depth1 h2 a.active::after,
-body.manager aside.menu nav ul li.depth1 h2 a:hover::after {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 4px;
-  height: 40px;
-  background: url("../images/icon-menu.png") no-repeat center / 100%;
+  font-weight: 800;
+  color: #0a84dc;
 }
 body.manager aside.menu nav ul li.depth1 ul {
   overflow: hidden;
-  background: #f7f7f7;
   max-height: 0;
   -webkit-opacity: 0;
   -moz-opacity: 0;
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2 {
+  background: url("../images/plus2.gif") repeat-y 8px 0 #fff;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2.active {
+  background: url("../images/minus2.gif") repeat-y 8px 0px #ffffff;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2:first-child {
+  background: url("../images/plus2-first.gif") repeat-y 8px 0px #ffffff;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2:first-child.active {
+  background: url("../images/minus2-first.gif") repeat-y 8px 0px #ffffff;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2:last-child {
+  background: url("../images/plus2-last.gif") repeat-y 8px 0px #ffffff;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2:last-child.active {
+  background: url("../images/minus2-last.gif") repeat-y 8px 0px #ffffff;
 }
 body.manager aside.menu nav ul li.depth1 ul li.depth2 a {
-  display: block;
   width: 100%;
   height: 26px;
   line-height: 26px;
-  padding: 0 20px;
-  border-right: #ccc;
-  font-weight: 800;
+  padding: 0 20px 0 38px;
 }
 body.manager aside.menu nav ul li.depth1 ul li.depth2 a.active,
 body.manager aside.menu nav ul li.depth1 ul li.depth2 a:hover {
+  font-weight: 800;
   color: #0a84dc;
 }
 body.manager aside.menu nav ul li.depth1 ul li.depth2 ul {
@@ -476,9 +493,27 @@ body.manager aside.menu nav ul li.depth1 ul li.depth2 ul {
   opacity: 0;
   padding: 0 0 0 20px;
 }
+body.manager aside.menu nav ul li.depth1 ul li.depth2 ul li.depth3 {
+  background: url("../images/plus0.gif") repeat-y 2px 0 #e1e1e1;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2 ul li.depth3.active {
+  background: url("../images/minus0.gif") repeat-y 2px 0px #e1e1e1;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2 ul li.depth3:first-child {
+  background: url("../images/plus0-first.gif") repeat-y 2px 0px #e1e1e1;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2 ul li.depth3:first-child.active {
+  background: url("../images/minus0-first.gif") repeat-y 2px 0px #e1e1e1;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2 ul li.depth3:last-child {
+  background: url("../images/plus0-last.gif") repeat-y 2px 0px #e1e1e1;
+}
+body.manager aside.menu nav ul li.depth1 ul li.depth2 ul li.depth3:last-child.active {
+  background: url("../images/minus0-last.gif") repeat-y 2px 0px #e1e1e1;
+}
 body.manager aside.menu nav ul li.depth1 ul li.depth2 ul li.depth3 a {
   font-weight: 400;
-  padding: 0 0 0 14px;
+  padding: 0 0 0 32px;
   position: relative;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -497,26 +532,18 @@ body.manager aside.menu nav ul li.depth1 ul li.depth2 ul li.depth3 a:hover::befo
   height: 3px;
   left: 8px;
   top: 10px;
-  background: #0a84dc;
 }
 body.manager aside.menu nav ul li.depth1 ul li.depth2.active ul {
   max-height: 2000px;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 body.manager aside.menu nav ul li.depth1.active ul {
-  padding: 10px 0;
   max-height: 2000px;
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 body.manager footer#footer {
   display: inline-block;
