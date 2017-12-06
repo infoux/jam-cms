@@ -562,160 +562,151 @@ body.manager {
     float: left;
 
     nav {
-      padding: 20px 0;
-      width: calc(~"100% - 1px");
+      padding: 20px 0; 
 
       ul {
         .mapazero;
         .no-list;
 
+        background: url("../images/dotLine.gif") repeat-y 14px 0px;
+        li {
+          
+          &.active {
+            &>a {
+              .bold;
+              color:@blue;
+            }
+          }
+        }
+
         li.depth1 {
 
-          background: url("../images/plus.gif") repeat-y 7px 0px #ffffff;
+          background: url("../images/plus.gif") no-repeat 7px 0px;
           &.active {
-            background: url("../images/minus.gif") repeat-y 7px 0px #ffffff;
+            background: url("../images/minus.gif")  no-repeat 7px 0px;
           }
+
           &:first-child {
-            background: url("../images/plus-first.gif") repeat-y 7px 0px #ffffff;
+            background: url("../images/plus-first.gif")  no-repeat 7px 0px;
             &.active {
-              background: url("../images/minus-first.gif") repeat-y 7px 0px #ffffff;
+              background: url("../images/minus-first.gif")  no-repeat 7px 0px;
             }
           }
-          
+
           &:last-child {
-            background: url("../images/plus-last.gif") repeat-y 7px 0px #ffffff;
+            background: url("../images/plus-last.gif")  no-repeat 7px 0px #fff;
             &.active {
-              background: url("../images/minus-last.gif") repeat-y 7px 0px #ffffff;
+              background: url("../images/minus.gif")  no-repeat 7px 0px;
             }
-          }
-          h2 {
-            .mapazero;
 
-            a {
-              .block;
-              .relative;
-              height: 36px;
-              line-height: 36px;
-              font-size: 18px;
-              padding: 0 26px;
-              .normal;
+            .depth2 {
+              background: url("../images/plus2-last.gif")  no-repeat 7px 0px;
+              &.active {
+                background: url("../images/minus2-last.gif")  no-repeat 7px 0px;
+              }
+              .depth3 {
+                background-color:#fff;
+                &.active {
+                  background-color:#fff;
+                }
+                &:last-child {
+                  background-color:#fff;
+                  &.active {
+                    background-color:#fff;
+                  }
+                }
 
-              &.active,
-              &:hover {
-                .bold;
-                color: @blue-light;
               }
             }
           }
 
-          ul {
-            .hidden;
-            max-height: 0;
-            .opacity(0);
+          &>a {
+            padding:0 0 0 26px;
+            height:36px;
+            line-height:36px;
+            font-size:16px;
+          }
 
+          &>ul {
+            .none;
+
+            &.active {
+              .block;
+            }
 
             li.depth2 {
 
-              background: url("../images/plus2.gif") repeat-y 8px 0 #fff;
+              background: url("../images/plus2.gif") no-repeat 7px 0px;
               &.active {
-                background: url("../images/minus2.gif") repeat-y 8px 0px #ffffff;
+                background: url("../images/minus2.gif")  no-repeat 7px 0px;
               }
 
-              &:first-child {
-                background: url("../images/plus2-first.gif") repeat-y 8px 0px #ffffff;
+              &.nodepth {
+                background: url("../images/plus2.gif")  no-repeat 7px 0px;
                 &.active {
-                  background: url("../images/minus2-first.gif") repeat-y 8px 0px #ffffff;
+                  background: url("../images/minus2-nodepth.gif")  no-repeat 7px 0px;
                 }
+  
 
               }
-              
-              &:last-child {
-                background: url("../images/plus2-last.gif") repeat-y 8px 0px #ffffff;
+
+              &>a {
+                padding:0 0 0 36px;
+                height:26px;
+                line-height:26px;
+                font-size:14px;
+              }
+
+
+
+
+              &>ul {
+                .none;
+    
                 &.active {
-                  background: url("../images/minus2-last.gif") repeat-y 8px 0px #ffffff;
+                  .block;
                 }
-
-              }
-
-
-              a {
-                width: 100%;
-                height: 26px;
-                line-height: 26px;
-                padding: 0 20px 0 38px;
-
-                &.active,
-                &:hover {
-                  .bold;
-                  color: @blue-light;
-                }
-              }
-
-              ul {
-                .hidden;
-                max-height: 0;
-                .opacity(0);
-                padding: 0 0 0 20px;
-
+    
                 li.depth3 {
-
-
-                  background: url("../images/plus0.gif") repeat-y 2px 0 #e1e1e1;
+    
+                  background: url("../images/plus0.gif") no-repeat 7px 0px;
                   &.active {
-                    background: url("../images/minus0.gif") repeat-y 2px 0px #e1e1e1;
+                    background: url("../images/minus0.gif")  no-repeat 7px 0px;
                   }
     
-                  &:first-child {
-                    background: url("../images/plus0-first.gif") repeat-y 2px 0px #e1e1e1;
-                    &.active {
-                      background: url("../images/minus0-first.gif") repeat-y 2px 0px #e1e1e1;
-                    }
-    
-                  }
-                  
+
+
                   &:last-child {
-                    background: url("../images/plus0-last.gif") repeat-y 2px 0px #e1e1e1;
+                    background: url("../images/plus0-last.gif")  no-repeat 7px 0px;
                     &.active {
-                      background: url("../images/minus0-last.gif") repeat-y 2px 0px #e1e1e1;
-                    }
-    
-                  }
-    
-                  a {
-                    .normal;
-                    padding: 0 0 0 32px;
-                    .relative;
-                    .ellipse;
-
-                    &.active,
-                    &:hover {
-                      color: @gray-dark;
-
-                      &::before {
-                        content: "";
-                        .absolute;
-                        .block;
-                        width: 3px;
-                        height: 3px;
-                        left: 8px;
-                        top: 10px;
-                      }
+                      background: url("../images/minus0-last.gif")  no-repeat 7px 0px;
                     }
                   }
+
+                  &>a {
+                    padding:0 0 0 46px;
+                    height:26px;
+                    line-height:26px;
+                    font-size:14px;
+                  }
+    
+    
+    
+                  
                 }
+    
               }
 
-              &.active ul {
-                max-height: 2000px;
-                .opacity(1);
-              }
+
+              
             }
+
           }
 
-          &.active ul {
-            max-height: 2000px;
-            .opacity(1);
-          }
+
+
+
+
         }
       }
     }
