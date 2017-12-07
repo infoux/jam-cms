@@ -401,7 +401,7 @@ body.manager header#header button.logout {
 }
 body.manager aside.menu {
   display: inline-block;
-  width: 180px;
+  width: 199px;
   float: left;
 }
 body.manager aside.menu nav {
@@ -412,6 +412,11 @@ body.manager aside.menu nav ul {
   padding: 0;
   list-style: none;
   background: url("../images/dotLine.gif") repeat-y 14px 0px;
+}
+body.manager aside.menu nav ul li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 body.manager aside.menu nav ul li.active > a {
   font-weight: 800;
