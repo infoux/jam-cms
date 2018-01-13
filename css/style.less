@@ -446,7 +446,7 @@ html {
 }
 
 body {
-  font-family: @myfont,"Malgun Gothic", "apple sd gothic neo", sans-serif;
+  font-family:"Malgun Gothic", "apple sd gothic neo", @myfont, sans-serif;
   color: @gray-darker;
 }
 
@@ -581,22 +581,22 @@ body.manager {
 
         li.depth1 {
 
-          background: url("../images/plus.gif") no-repeat 7px 0px;
+          background: url("../images/plus.gif") no-repeat 7px -4px;
           &.active {
-            background: url("../images/minus.gif")  no-repeat 7px 0px;
+            background: url("../images/minus.gif")  no-repeat 7px -4px;
           }
 
           &:first-child {
-            background: url("../images/plus-first.gif")  no-repeat 7px 0px;
+            background: url("../images/plus-first.gif")  no-repeat 7px -4px;
             &.active {
-              background: url("../images/minus-first.gif")  no-repeat 7px 0px;
+              background: url("../images/minus-first.gif")  no-repeat 7px -4px;
             }
           }
 
           &:last-child {
-            background: url("../images/plus-last.gif")  no-repeat 7px 0px #fff;
+            background: url("../images/plus-last.gif")  no-repeat 7px -4px #fff;
             &.active {
-              background: url("../images/minus.gif")  no-repeat 7px 0px;
+              background: url("../images/minus.gif")  no-repeat 7px -4px;
             }
 
             .depth2 {
@@ -622,9 +622,9 @@ body.manager {
 
           &>a {
             padding:0 0 0 26px;
-            height:36px;
-            line-height:36px;
-            font-size:16px;
+            height:28px;
+            line-height:28px;
+            font-size:13px;
           }
 
           &>ul {
@@ -636,25 +636,25 @@ body.manager {
 
             li.depth2 {
 
-              background: url("../images/plus2.gif") no-repeat 7px 0px;
+              background: url("../images/plus2.gif") no-repeat 7px -4px;
               &.active {
-                background: url("../images/minus2.gif")  no-repeat 7px 0px;
+                background: url("../images/minus2.gif")  no-repeat 7px -4px;
               }
 
               &.nodepth {
-                background: url("../images/plus2.gif")  no-repeat 7px 0px;
+                background: url("../images/plus2.gif")  no-repeat 7px -4px;
                 &.active {
-                  background: url("../images/minus2-nodepth.gif")  no-repeat 7px 0px;
+                  background: url("../images/minus2-nodepth.gif")  no-repeat 7px -4px;
                 }
   
 
               }
 
               &>a {
-                padding:0 0 0 36px;
-                height:26px;
-                line-height:26px;
-                font-size:14px;
+                padding:0 0 0 37px;
+                height:22px;
+                line-height:22px;
+                font-size:13px;
               }
 
 
@@ -669,25 +669,25 @@ body.manager {
     
                 li.depth3 {
     
-                  background: url("../images/plus0.gif") no-repeat 7px 0px;
+                  background: url("../images/plus0.gif") no-repeat 7px -2px;
                   &.active {
-                    background: url("../images/minus0.gif")  no-repeat 7px 0px;
+                    background: url("../images/minus0.gif")  no-repeat 7px -2px;
                   }
     
 
 
                   &:last-child {
-                    background: url("../images/plus0-last.gif")  no-repeat 7px 0px;
+                    background: url("../images/plus0-last.gif")  no-repeat 7px -2px;
                     &.active {
-                      background: url("../images/minus0-last.gif")  no-repeat 7px 0px;
+                      background: url("../images/minus0-last.gif")  no-repeat 7px -2px;
                     }
                   }
 
                   &>a {
-                    padding:0 0 0 46px;
-                    height:26px;
-                    line-height:26px;
-                    font-size:14px;
+                    padding:0 0 0 48px;
+                    height:22px;
+                    line-height:22px;
+                    font-size:13px;
                   }
     
     
@@ -726,7 +726,7 @@ body.sub {
     .inline-block;
     float: left;
     min-height: 800px;
-    width: calc(~"100% - 180px");
+    width: calc(~"100% - 199px");
     padding: 30px;
 
     div.stitle {
@@ -775,10 +775,7 @@ body.sub {
 }
 /* CHS 추가 */
 
-body.manager article.sub div.stitle div.btn-set a,
-body.sub article.sub div.stitle div.btn-set a {
-  width: 90px;
-}
+
 
 body.manager article.sub div.stitle,
 body.sub article.sub div.stitle {
@@ -793,14 +790,7 @@ hr.hr {
   margin-bottom: 0.5em;
 }
 
-body.manager article.sub,
-body.sub article.sub {
-  display: inline-block;
-  float: left;
-  min-height: 800px;
-  width: calc(100% - 180px);
-  padding: 10px;
-}
+
 
 article.login fieldset input[type="button"] {
   background: url("../images/btn-login.png") no-repeat center / 100% 100%;

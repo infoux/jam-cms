@@ -287,7 +287,7 @@ html {
   font-size: 14px;
 }
 body {
-  font-family: "Nanum Gothic", "Malgun Gothic", "apple sd gothic neo", sans-serif;
+  font-family: "Malgun Gothic", "apple sd gothic neo", "Nanum Gothic", sans-serif;
   color: #222222;
 }
 .sr-only {
@@ -423,22 +423,22 @@ body.manager aside.menu nav ul li.active > a {
   color: #0055b5;
 }
 body.manager aside.menu nav ul li.depth1 {
-  background: url("../images/plus.gif") no-repeat 7px 0px;
+  background: url("../images/plus.gif") no-repeat 7px -4px;
 }
 body.manager aside.menu nav ul li.depth1.active {
-  background: url("../images/minus.gif") no-repeat 7px 0px;
+  background: url("../images/minus.gif") no-repeat 7px -4px;
 }
 body.manager aside.menu nav ul li.depth1:first-child {
-  background: url("../images/plus-first.gif") no-repeat 7px 0px;
+  background: url("../images/plus-first.gif") no-repeat 7px -4px;
 }
 body.manager aside.menu nav ul li.depth1:first-child.active {
-  background: url("../images/minus-first.gif") no-repeat 7px 0px;
+  background: url("../images/minus-first.gif") no-repeat 7px -4px;
 }
 body.manager aside.menu nav ul li.depth1:last-child {
-  background: url("../images/plus-last.gif") no-repeat 7px 0px #fff;
+  background: url("../images/plus-last.gif") no-repeat 7px -4px #fff;
 }
 body.manager aside.menu nav ul li.depth1:last-child.active {
-  background: url("../images/minus.gif") no-repeat 7px 0px;
+  background: url("../images/minus.gif") no-repeat 7px -4px;
 }
 body.manager aside.menu nav ul li.depth1:last-child .depth2 {
   background: url("../images/plus2-last.gif") no-repeat 7px 0px;
@@ -460,9 +460,9 @@ body.manager aside.menu nav ul li.depth1:last-child .depth2 .depth3:last-child.a
 }
 body.manager aside.menu nav ul li.depth1 > a {
   padding: 0 0 0 26px;
-  height: 36px;
-  line-height: 36px;
-  font-size: 16px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 13px;
 }
 body.manager aside.menu nav ul li.depth1 > ul {
   display: none;
@@ -471,22 +471,22 @@ body.manager aside.menu nav ul li.depth1 > ul.active {
   display: block;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2 {
-  background: url("../images/plus2.gif") no-repeat 7px 0px;
+  background: url("../images/plus2.gif") no-repeat 7px -4px;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2.active {
-  background: url("../images/minus2.gif") no-repeat 7px 0px;
+  background: url("../images/minus2.gif") no-repeat 7px -4px;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2.nodepth {
-  background: url("../images/plus2.gif") no-repeat 7px 0px;
+  background: url("../images/plus2.gif") no-repeat 7px -4px;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2.nodepth.active {
-  background: url("../images/minus2-nodepth.gif") no-repeat 7px 0px;
+  background: url("../images/minus2-nodepth.gif") no-repeat 7px -4px;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2 > a {
-  padding: 0 0 0 36px;
-  height: 26px;
-  line-height: 26px;
-  font-size: 14px;
+  padding: 0 0 0 37px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 13px;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2 > ul {
   display: none;
@@ -495,22 +495,22 @@ body.manager aside.menu nav ul li.depth1 > ul li.depth2 > ul.active {
   display: block;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2 > ul li.depth3 {
-  background: url("../images/plus0.gif") no-repeat 7px 0px;
+  background: url("../images/plus0.gif") no-repeat 7px -2px;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2 > ul li.depth3.active {
-  background: url("../images/minus0.gif") no-repeat 7px 0px;
+  background: url("../images/minus0.gif") no-repeat 7px -2px;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2 > ul li.depth3:last-child {
-  background: url("../images/plus0-last.gif") no-repeat 7px 0px;
+  background: url("../images/plus0-last.gif") no-repeat 7px -2px;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2 > ul li.depth3:last-child.active {
-  background: url("../images/minus0-last.gif") no-repeat 7px 0px;
+  background: url("../images/minus0-last.gif") no-repeat 7px -2px;
 }
 body.manager aside.menu nav ul li.depth1 > ul li.depth2 > ul li.depth3 > a {
-  padding: 0 0 0 46px;
-  height: 26px;
-  line-height: 26px;
-  font-size: 14px;
+  padding: 0 0 0 48px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 13px;
 }
 body.manager footer#footer {
   display: inline-block;
@@ -523,7 +523,7 @@ body.sub article.sub {
   display: inline-block;
   float: left;
   min-height: 800px;
-  width: calc(100% - 180px);
+  width: calc(100% - 199px);
   padding: 30px;
 }
 body.manager article.sub div.stitle,
@@ -571,10 +571,6 @@ body.sub article.sub div.stitle div.btn-set a.sub {
   color: #fff;
 }
 /* CHS 추가 */
-body.manager article.sub div.stitle div.btn-set a,
-body.sub article.sub div.stitle div.btn-set a {
-  width: 90px;
-}
 body.manager article.sub div.stitle,
 body.sub article.sub div.stitle {
   position: relative;
@@ -585,14 +581,6 @@ hr.hr {
   border-width: 1px;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-}
-body.manager article.sub,
-body.sub article.sub {
-  display: inline-block;
-  float: left;
-  min-height: 800px;
-  width: calc(-80%);
-  padding: 10px;
 }
 article.login fieldset input[type="button"] {
   background: url("../images/btn-login.png") no-repeat center / 100% 100%;
